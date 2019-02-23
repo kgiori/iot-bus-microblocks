@@ -39,34 +39,34 @@ components that you can connect to it in order to make smart home devices. The k
 
 ## II. Getting Started with MicroBlocks
 
-Download MicroBlocks and install it on your PC
-[http://microblocks.fun/download.html#download]
+[Download MicroBlocks](http://microblocks.fun/download.html#download) and install it on your PC. 
+Read through the [setup section](http://microblocks.fun/download.html#setup).
 
-Read through the board setup section
-[http://microblocks.fun/download.html#setup]
+[Flash the IoT-Bus IO board](http://microblocks.fun/esp32Setup.html) with the MicroBlocks Virtual Machine (VM). 
+If a new VM is available later, you can reflash an update using the last step of the process. 
 
-Flash the IoT-Bus IO board with the MicroBlocks Virtual Machine (VM).
-[http://microblocks.fun/esp32Setup.html]
-If a new VM is available later, you can reflash using the last step of the process. 
+If the board's serial communications port is not visible when you click the ( Connect ) button in MicroBlocks, 
+you may need to install a 
+[SiLabs driver](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers).
 
-The MicroBlocks web site has more detail, but here is a quick summary for connecting the board and making sure it works. 
-Note that the “user LED” is blue, and located on the IO board which may be inside the sandwich if the Relay board is already 
-stacked on top.
+Once the Connect light is green, do a brief check by turning on the built-in LED. 
+If a Relay board is stacked on top of the IO board you may need to peek inside the sandwich to see the lit LED.
 
 ![mb-setup](/images/image3.png)
 ![led check](/images/image4.png)
 
 To check Wi-Fi connectivity to your router, click ( Open ), select folder “[ ] Mozilla IoT”, scroll to the bottom 
 and select “WiFi LED Thing.gpp”. Set your “Network_Name” (SSID) and password in the first blue block. Then click ( Start ). 
-Goal is to get an IP address.
+If the connection succeeds, you will see an IP address pop up and the blinking LED will transition form slow to fast 
+and then stop.
 
 ![select wi-fi example](/images/image5.png)
 ![start example](/images/image6.png)
 
 Examples for the remainder of this guide can be downloaded from github to your computer. You then “open” them by 
 navigating to wherever you stored them.
-https://github.com/kgiori/iot-bus-microblocks
-=> store .gpp examples to your computer.
+Clone or download a zip file of the examples from (https://github.com/kgiori/iot-bus-microblocks).
+Files ending in .gpp are the examples.
 
 ## III. Check Connectivity of IoT-Bus IO to Mozilla Things Gateway
 
